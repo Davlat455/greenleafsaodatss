@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Greenleaf Family</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="logo-left">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwXcZog10i1ZP0MYfPDk97KzBVxo9wqi9IA&s" alt="Greenleaf Logo" class="ser"/>
+      <div class="logo-text">
+        <strong>Greenleaf</strong><span class="family-box">family</span>
+        <p class="slogan">Born for Beauty</p>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Главная</a>
+      <a href="#">О компании</a>
+      <a href="#">Продукция</a>
+      <a href="#">Как начать свой бизнес</a>
+      <a href="#">Контакты</a>
+      <a href="#">Трансляции</a>
+    </nav>
+    <div class="phone">+998-91-523-70-74</div>
+  </header>
+
+  <section class="hero-section">
+    <div class="overlay">
+        <div class="slaom">
+             <h1>Greenleaf <span class="family-box-big">family</span></h1>
+      <p class="slogan-big">Born for Beauty</p> 
+        </div>
+    
+    </div>
+  </section>
+
+</body>
+</html>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Segoe UI", sans-serif;
+  color: #2e7d32;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 40px;
+  border-bottom: 2px solid #d0d0d0;
+  flex-wrap: wrap;
+}
+
+.logo-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-left img {
+  height: 50px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.family-box {
+  background-color: #4caf50;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.logo-text .slogan {
+  font-size: 12px;
+  color: #666;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4caf50;
+}
+
+.phone {
+  font-weight: bold;
+  color: #000;
+}
+
+.hero-section {
+  background-image: url('greenleaf-bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(182, 182, 182, 0.8);
+  border-radius: 12px;
+  width: 1800px;
+  height: 500px;
+  position: relative;
+  top: 220px;
+   display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 100vh;           
+  background-color: #f0f0f0;
+  /* display: block; */
+}
+
+.overlay h1 {
+  font-size: 42px;
+  color: #2e7d32;
+  /* text-align: center; */
+  /* justify-content: center; */
+}
+
+.family-box-big {
+  background-color: #000000;
+  color: white;
+  font-size: 20px;
+  padding: 3px 10px;
+  margin-left: 15px;
+  /* padding: auto; */
+  border-radius: 5px;
+
+}
+
+.slogan-big {
+  font-size: 20px;
+  color: #333;
+  margin-top: 10px;
+}
+.ser{
+    border-radius: 25px;
+}
+.slaom{
+    width: 300px;
+    height: 300px;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+  <header class="will">
+    <h1>🛒 Onlayn Do‘kon</h1>
+    <nav>
+      <button onclick="showProducts()">Mahsulotlar</button>
+      <button onclick="showCart()">Korzinka (<span id="cart-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <main id="content" class="dads">
+    <!-- Mahsulotlar va korzinka shu yerda ko‘rinadi -->
+  </main>
+
+  <script src="mahsulot kodi.js"></script>
+</body>
+</html>
+<style> 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+header {
+  background: #0077cc;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  background: white;
+  color: #0077cc;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+main {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* faqat 3 ta ustun */
+  gap: 2rem; /* kartalar orasini kengroq qilamiz */
+  /* height: 500px; */
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  max-width: 100%;
+  height: 180px; /* kattaroq rasm */
+  object-fit: contain;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.card button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.cart-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.checkout-btn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.will{
+  margin-top: 500px;
+}
+
+</style>
